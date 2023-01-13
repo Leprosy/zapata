@@ -1,0 +1,22 @@
+{
+  "name": "zapata",
+  "version": "1.0.0",
+  "description": "Sitio oficial de PanchoZapata",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Leprosy/zapata.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Leprosy/zapata/issues"
+  },
+  "homepage": "https://github.com/Leprosy/zapata#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.2.4"
+  }
+}

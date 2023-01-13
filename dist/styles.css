@@ -1,0 +1,25 @@
+body {
+    background: #000;
+    color: #8a2be2;
+    font-family: cursive;
+}
+
+.container {
+    background-color: #222;
+    max-width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+.container img {
+    display: block;
+    max-width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.taldo {
+
+}
