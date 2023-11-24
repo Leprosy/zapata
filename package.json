@@ -4,9 +4,7 @@
   "description": "Sitio oficial de PanchoZapata",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "css-dev": "npx tailwindcss -i ./src/css/styles.css -o ./dist/styles.css --watch",
-    "css": "npx tailwindcss -i ./src/css/styles.css -o ./dist/styles.css --watch --minify"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
@@ -18,7 +16,6 @@
     "url": "https://github.com/Leprosy/zapata/issues"
   },
   "homepage": "https://github.com/Leprosy/zapata#readme",
-  "devDependencies": {
-    "tailwindcss": "^3.2.4"
+  "dependencies": {
   }
 }

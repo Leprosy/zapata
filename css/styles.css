@@ -1,0 +1,49 @@
+@import url(text.css);
+
+html, body, .layout-main {
+  height: 100%
+}
+
+body {
+  background-color: black;
+  color: #fff;
+}
+
+header, footer {
+  flex: 1
+}
+
+section {
+  flex: 5;
+  overflow: scroll;
+  line-height: 1.5em;
+}
+
+
+.layout-main {
+  display: flex;
+  flex-direction: column;
+}
+.navigation {
+  display: flex;
+  flex-direction: row;
+  margin-top: 2em;
+  padding: 0;
+}
+.navigation li {
+  flex: 1;
+  text-align: center;
+  list-style-type: none;
+  margin:0;
+  padding:0;
+}
+
+
+.logo {
+  margin-top: 30vh;
+  margin-bottom: 35vh;
+}
+
+.logo h1, .logo h3 {
+  text-align: center;
+}
