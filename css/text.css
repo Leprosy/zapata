@@ -37,6 +37,7 @@ h2,
 h3 {
     font-family: zapata;
     margin: 0;
+    text-shadow: 10px 10px 10px #000;
 }
 
 section p {

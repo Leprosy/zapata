@@ -24,7 +24,6 @@ section {
   margin: 0 1em;
 }
 
-
 .layout-main {
   display: flex;
   flex-direction: column;
@@ -58,4 +57,28 @@ section {
 
 .content {
   margin-top: 5em;
+}
+
+@media (min-width: 600px) {
+  :root {
+    --base-size: 1rem;
+    --scale: 1.35;
+  }
+
+  .layout-main {
+    width: 80%;
+    margin: auto;
+  }
+}
+
+@media (min-width: 1000px) {
+  :root {
+    --base-size: 1.1rem;
+    --scale: 1.4;
+  }
+
+  .layout-main {
+    width: 60%;
+    margin: auto;
+  }
 }
