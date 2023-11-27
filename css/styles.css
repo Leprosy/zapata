@@ -55,3 +55,7 @@ section {
 .logo h3 {
   text-align: center;
 }
+
+.content {
+  margin-top: 5em;
+}
