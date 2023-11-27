@@ -1,22 +1,27 @@
 @import url(text.css);
+@import url(fx.css);
 
-html, body, .layout-main {
+html,
+body,
+.layout-main {
   height: 100%
 }
 
 body {
   background-color: black;
   color: #fff;
+  margin: 0;
 }
 
-header, footer {
+header,
+footer {
   flex: 1
 }
 
 section {
-  flex: 5;
+  flex: 10;
   overflow: scroll;
-  line-height: 1.5em;
+  margin: 0 1em;
 }
 
 
@@ -24,26 +29,29 @@ section {
   display: flex;
   flex-direction: column;
 }
+
 .navigation {
   display: flex;
   flex-direction: row;
-  margin-top: 2em;
+  margin-top: 1.5em;
   padding: 0;
 }
+
 .navigation li {
   flex: 1;
   text-align: center;
   list-style-type: none;
-  margin:0;
-  padding:0;
+  margin: 0;
+  padding: 0;
 }
 
 
 .logo {
   margin-top: 30vh;
-  margin-bottom: 35vh;
+  margin-bottom: 40vh;
 }
 
-.logo h1, .logo h3 {
+.logo h1,
+.logo h3 {
   text-align: center;
 }

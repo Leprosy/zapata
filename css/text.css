@@ -1,12 +1,17 @@
 :root {
     --base-size: 1rem;
-    --scale: 1.22;
-    --h1: calc(var(--h2) * var(--scale));
+    --scale: 1.28;
+    --h1: calc(var(--h2) * var(--scale) * 1.2);
     --h2: calc(var(--h3) * var(--scale));
     --h3: calc(var(--h4) * var(--scale));
     --h4: calc(var(--h5) * var(--scale));
     --h5: calc(var(--h6) * var(--scale));
     --h6: var(--base-size);
+}
+
+@font-face {
+    font-family: 'zapata';
+    src: url('/fonts/rockledge.ttf');
 }
 
 body {
@@ -22,4 +27,16 @@ h2 {
 }
 h3 {
     font-size: var(--h3);
+}
+h1, h2, h3 {
+    font-family: zapata;
+    margin:0;
+}
+section p {
+    line-height: 1.5;
+}
+
+a {
+    font-family: zapata;
+    color: #ffa;
 }
