@@ -59,6 +59,11 @@ section {
   margin-top: 5em;
 }
 
+.content img {
+  margin: 1em auto;
+  display: block;
+}
+
 @media (min-width: 600px) {
   :root {
     --base-size: 1rem;
@@ -68,6 +73,12 @@ section {
   .layout-main {
     width: 80%;
     margin: auto;
+  }
+
+  .content img {
+    max-width: 45%;
+    float: left;
+    margin-right: 1em;
   }
 }
 
@@ -80,5 +91,9 @@ section {
   .layout-main {
     width: 60%;
     margin: auto;
+  }
+
+  .content img {
+    max-width: 40%;
   }
 }
