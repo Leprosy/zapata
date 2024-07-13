@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: 'zapata';
+    src: url('fonts/rockledge.ttf')
+}
+html, body {
+    height: 100%;
+}
+
+body {
+    background-color: #0b1131;
+    background-image: url(img/background.png);
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-size: calc(100% / 2);
+}
+
+.main-logo {
+    text-shadow: 5px 5px #000;
+    font-family: zapata;
+    color: #fff
+}
+
+.taldo {
+    color: #f00;
+}
+
+.crap {
+    color: #000;
+}

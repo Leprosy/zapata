@@ -1,99 +1,110 @@
 @import url(text.css);
 @import url(fx.css);
 
-html,
-body,
-.layout-main {
-  height: 100%
+html, body {
+  height: 100%;
 }
 
 body {
-  background-color: black;
-  color: #fff;
-  margin: 0;
+  transition: background-color 1s, color 1s, background-image 1s;
 }
 
-header,
-footer {
-  flex: 1
+header {
+  flex: 1;
 }
 
 section {
-  flex: 10;
+  flex: 8;
   overflow: scroll;
-  margin: 0 1em;
+  scrollbar-width: thin;
+  scroll-behavior: smooth !important;
 }
 
-.layout-main {
-  display: flex;
-  flex-direction: column;
+section article {
+  padding-left: 2rem;
+  padding-right: 2rem;
+  margin-bottom: 10rem;
 }
 
-.navigation {
-  display: flex;
-  flex-direction: row;
-  margin-top: 1.5em;
-  padding: 0;
-}
-
-.navigation li {
+footer {
   flex: 1;
-  text-align: center;
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
 }
-
 
 .logo {
   margin-top: 30vh;
   margin-bottom: 40vh;
 }
 
-.logo h1,
-.logo h3 {
-  text-align: center;
+a {
+  text-decoration: none;
+  cursor: pointer;
+  color: #000;
 }
 
-.content {
-  margin-top: 5em;
+.shadow1 {
+  text-shadow: 2px 2px 2px black;
+}
+.shadow2 {
+  text-shadow: 6px 6px 6px black;
 }
 
-.content img {
-  margin: 1em auto;
-  display: block;
+/* band goats */
+#banda .col-12 {
+  background-color: #333;
+  height: 400px;
+  background-size: cover;
+  background-blend-mode: luminosity;
+  opacity: 0.5;
+  transition: opacity 1s;
+}
+#banda .col-12:hover {
+  background-blend-mode: normal;
+  opacity: 1;
+}
+#banda .bg1 {
+  background-image: url(../img/goats/mikel.webp);
+}
+#banda .bg2 {
+  background-image: url(../img/goats/mati.webp);
+}
+#banda .bg3 {
+  background-image: url(../img/goats/vicho.webp);
+}
+#banda .bg4 {
+  background-image: url(../img/goats/seba.webp);
 }
 
-@media (min-width: 600px) {
-  :root {
-    --base-size: 1rem;
-    --scale: 1.35;
-  }
 
-  .layout-main {
+/* section themes */
+.theme-banda {
+  background-color: #000;
+}
+.theme-banda, .theme-banda a {
+  color: #fff;
+}
+
+.theme-musica {
+  background-color: #2b0080;
+  /* background-image: url(../img/zapata.png);
+  background-repeat: no-repeat; */
+}
+.theme-musica, .theme-musica a {
+  color: #a9a9a9;
+}
+
+
+@media (min-width: 768px) {
+  #banda .roster {
     width: 80%;
-    margin: auto;
   }
 
-  .content img {
-    max-width: 45%;
-    float: left;
-    margin-right: 1em;
+  #banda .col-12 {
+    height: 25vw;
   }
 }
 
-@media (min-width: 1000px) {
-  :root {
-    --base-size: 1.1rem;
-    --scale: 1.4;
-  }
-
-  .layout-main {
+@media (min-width: 990px) {
+  #banda .roster {
     width: 60%;
-    margin: auto;
-  }
-
-  .content img {
-    max-width: 40%;
   }
 }
